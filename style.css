@@ -218,11 +218,14 @@ ul li a {
 	padding-bottom: 20px;
 	/*outline: 1px solid red;*/
 }
-
-a:visited { text-decoration: line-through; color:#777; }
-a:hover { text-decoration: line-through; color:#000; }
-a:focus { text-decoration: line-through; color:#000; }
-a:hover, a:active { text-decoration: line-through; color:#000 }
+a {
+	all: unset;
+	color: #777;
+}
+a:visited { text-decoration: line-through; color: #777; }
+a:hover { text-decoration: line-through; color: #777; }
+a:focus { text-decoration: line-through; color: #777; }
+a:hover, a:active { text-decoration: line-through; color: #777 }
 
 
 @media (max-width: 900px) {
