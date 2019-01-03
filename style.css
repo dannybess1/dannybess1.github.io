@@ -1,0 +1,287 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+/**************************************
+Style
+**************************************/
+
+
+body {
+	font-family: "Avenir-Heavy", Didot,'Droid Serif',Garamond,Times New Roman,serif; 
+	font-size: 100%;
+	line-height: 1.5rem;
+	color: #555;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url(img/blur.jpg) no-repeat center center;
+	background-size: cover;
+	  resize: both;
+  overflow: auto;
+
+}
+
+.card {
+	max-width: 1080px;
+	width: 75%;
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	overflow: auto;
+	background: #fff;
+	margin: 0 auto;
+	  -webkit-box-shadow: 20px 20px 40px 0px rgba(0,0,0,0.2);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	  -moz-box-shadow: 20px 20px 40px 0px rgba(0,0,0,0.2);  /* Firefox 3.5 - 3.6 */
+	  box-shadow: 20px 20px 40px 0px rgba(0,0,0,0.2);
+
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.leftImage {
+	float: left;
+	width: 35%;
+	background: url(img/Daniel-Bessonov.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.content {
+	float: left;
+	width: 65%;
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 50px;
+}
+
+.header {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+#noblock {
+	display: noblock;
+}
+
+h1 {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+	color: #333;
+	font-size: 1.25rem;
+	font-weight: 600;
+	display: inline-block;
+	border-bottom: 4px solid #333;
+	margin-bottom: 100px;
+}
+
+
+span.logo img{
+	height: 64px;
+	width: 64px;
+}
+
+span.button {
+  float: right;
+  padding-top: 6px;
+}
+
+
+#kms {
+	text-decoration: none;
+}
+
+#kms:hover {
+		text-decoration: line-through;
+}
+
+.button a {
+	text-decoration: none;
+	 color: #ddd;
+	font-style: italic;
+	font-size: 0.75rem;
+}
+
+.button a:hover {
+	text-decoration: none;
+	 color: #777;
+	 text-decoration: line-through;
+}
+
+
+p:last-of-type {
+	margin-bottom: 1.5rem;
+}
+
+p {
+	font-size: 0.875rem;
+	color: #777;
+		margin-bottom: 0.3rem;
+	text-decoration: none;
+}
+
+ul {
+	width: 100%;
+	margin-top: 1.5rem;
+}
+
+ul:before {
+	content: '';
+	height: 1px;
+	background: #ddd;
+	width: 100%;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+ul li {
+	list-style-type: none;
+	display: inline-block;
+	width: 8%;
+	position: relative;
+	border-right: 1px solid #ddd;
+	margin-right: 2.9%;
+}
+
+ul li:last-child  {
+	border-right: none;
+}
+
+ul li a {
+	text-decoration: none;
+	color: #777;
+	font-style: italic;
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/*outline: 1px solid red;*/
+}
+
+a:visited { text-decoration: line-through; color:#777; }
+a:hover { text-decoration: line-through; color:#000; }
+a:focus { text-decoration: line-through; color:#000; }
+a:hover, a:active { text-decoration: line-through; color:#000 }
+
+
+@media (max-width: 900px) {
+
+.card {
+transform: translate(0, 0);
+  position: relative;
+  margin: 0 auto;
+  top: auto;
+  left: auto;
+  width: 100%;
+  	display: inline-block;
+}
+
+.leftImage {
+	width: 100%;
+	height: 250px;
+}
+
+.content {
+	width: 100%;
+}
+
+}
+
+
+@media (max-width: 450px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
